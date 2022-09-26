@@ -74,7 +74,7 @@ install_theme() {
     cp -r "${SRC_DIR}"/links/{16,22,24,32,64,256,scalable,symbolic}              "${THEME_DIR}"
     if [ -n "${colorprefix}" ]; then
       install -m644 "${SRC_DIR}"/colors/color${colorprefix}/places/*.svg         "${THEME_DIR}/scalable/places"
-      install -m644 "${SRC_DIR}"/colors/color${colorprefix}/apps/*.svg           "${THEME_DIR}/scalable/apps"
+      # install -m644 "${SRC_DIR}"/colors/color${colorprefix}/apps/*.svg           "${THEME_DIR}/scalable/apps"
     fi
   else
     local -r STD_THEME_DIR="${THEME_DIR%-dark}"
